@@ -22,6 +22,10 @@
 #include <omp.h>
 #include <ParTI.h>
 #include "../src/sptensor/sptensor.h"
+#include <time.h>
+
+
+#define BILLION 1000000000L
 
 void print_usage(int argc, char ** argv) {
     printf("Usage: %s [options] \n\n", argv[0]);
@@ -211,6 +215,7 @@ int main(int argc, char ** argv) {
     }
 
     /* For warm-up caches, timing not included */
+    /*
     if(cuda_dev_id >= 0) {
         sptCudaSetDevice(cuda_dev_id);
         // sptAssert(sptCudaMTTKRP(&X, U, mats_order, mode, impl_num) == 0);
@@ -232,8 +237,11 @@ int main(int argc, char ** argv) {
         }
        #endif
     }
+    */
+    struct timespec start, end;
+    float diff = 0.0f;
+    double avgtime = 0.0f;
 
-    
     sptTimer timer;
     sptNewTimer(&timer, 0);
     sptStartTimer(timer);
@@ -242,10 +250,18 @@ int main(int argc, char ** argv) {
         if(cuda_dev_id >= 0) {
             sptCudaSetDevice(cuda_dev_id);
             // sptAssert(sptCudaMTTKRP(&X, U, mats_order, mode, impl_num) == 0);
+            clock_gettime(CLOCK_MONOTONIC, &start); /* mark start time */
             sptAssert(sptCudaMTTKRPOneKernel(&X, U, mats_order, mode, impl_num) == 0);
+            clock_gettime(CLOCK_MONOTONIC, &end); /* mark the end time */
+            diff = ( BILLION * (end.tv_sec - start.tv_sec) + end.tv_nsec - start.tv_nsec );
+            diff = diff / ((double)BILLION);
+            avgtime += (double)diff;
+            printf("Time taken: %f seconds (%ld cycles)\n", diff,  (long int)((diff*BILLION)/0.5)); // number if cycles at 2GHz clock
         }
     }
     sptStopTimer(timer);
+
+    printf("Average time taken: %lf seconds (%ld cycles)\n", avgtime/niters,  (long int)((avgtime*BILLION)/(0.5*niters)));
 
     if (cuda_dev_id >=0) {
         double aver_time = sptPrintAverageElapsedTime(timer, niters, "GPU SpTns MTTKRP");

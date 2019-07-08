@@ -1,0 +1,828 @@
+==========================================================
+nell-2
+==========================================================
+**************** Mode 0 ****************
+niters: 5
+input file: nell-2-parti.tns
+output file: nell-2.out
+mode: 0
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+0	1	2	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=12092x9184x28818 NNZ=76879419 DENSITY=2.402239e-05
+Average slice length (c): 6357.87 , 8371.02 , 2667.76
+COO-STORAGE=1.43GB
+
+[CUDA SpTns MTTKRP H2D]: 1.226147834 s
+[Bandwidth H2D]: 1.279966 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.240603935 s
+[GFLOPS]: 40.90 GFlops, [Bandwidth]: 6.50 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001635793 s
+[Bandwidth D2H]: 3.784777 GBytes/sec
+
+Time taken: 1.483466 seconds (2966932480 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.593831412 s
+[Bandwidth H2D]: 2.642884 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.198010812 s
+[GFLOPS]: 49.70 GFlops, [Bandwidth]: 7.89 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001763929 s
+[Bandwidth D2H]: 3.509842 GBytes/sec
+
+Time taken: 0.808654 seconds (1617308544 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.450739035 s
+[Bandwidth H2D]: 3.481899 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.186731131 s
+[GFLOPS]: 52.70 GFlops, [Bandwidth]: 8.37 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001106795 s
+[Bandwidth D2H]: 5.593730 GBytes/sec
+
+Time taken: 0.653499 seconds (1306997248 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.542785563 s
+[Bandwidth H2D]: 2.891432 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.195121815 s
+[GFLOPS]: 50.43 GFlops, [Bandwidth]: 8.01 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.003527007 s
+[Bandwidth D2H]: 1.755344 GBytes/sec
+
+Time taken: 0.757104 seconds (1514208896 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.501547384 s
+[Bandwidth H2D]: 3.129171 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.187431583 s
+[GFLOPS]: 52.50 GFlops, [Bandwidth]: 8.34 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001477558 s
+[Bandwidth D2H]: 4.190097 GBytes/sec
+
+Time taken: 0.705543 seconds (1411085184 cycles)
+Average time taken: 4.408266 seconds (1763306474 cycles)
+[GPU SpTns MTTKRP]: 1.169532994 s
+**************** Mode 1 ****************
+niters: 5
+input file: nell-2-parti.tns
+output file: nell-2.out
+mode: 1
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+1	0	2	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=12092x9184x28818 NNZ=76879419 DENSITY=2.402239e-05
+Average slice length (c): 6357.87 , 8371.02 , 2667.76
+COO-STORAGE=1.43GB
+
+[CUDA SpTns MTTKRP H2D]: 0.441351122 s
+[Bandwidth H2D]: 3.552588 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.238131753 s
+[GFLOPS]: 41.32 GFlops, [Bandwidth]: 6.56 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000855743 s
+[Bandwidth D2H]: 5.494893 GBytes/sec
+
+Time taken: 0.699862 seconds (1399724544 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.271901899 s
+[Bandwidth H2D]: 5.766560 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.191302178 s
+[GFLOPS]: 51.44 GFlops, [Bandwidth]: 8.17 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000888120 s
+[Bandwidth D2H]: 5.294573 GBytes/sec
+
+Time taken: 0.477808 seconds (955615104 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.248718292 s
+[Bandwidth H2D]: 6.304075 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.191286557 s
+[GFLOPS]: 51.44 GFlops, [Bandwidth]: 8.17 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000924634 s
+[Bandwidth D2H]: 5.085489 GBytes/sec
+
+Time taken: 0.454650 seconds (909299200 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.235120257 s
+[Bandwidth H2D]: 6.668667 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.192539083 s
+[GFLOPS]: 51.11 GFlops, [Bandwidth]: 8.12 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000940175 s
+[Bandwidth D2H]: 5.001426 GBytes/sec
+
+Time taken: 0.443658 seconds (887316352 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.249019679 s
+[Bandwidth H2D]: 6.296445 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.190236415 s
+[GFLOPS]: 51.73 GFlops, [Bandwidth]: 8.22 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000872249 s
+[Bandwidth D2H]: 5.390910 GBytes/sec
+
+Time taken: 0.453828 seconds (907655680 cycles)
+Average time taken: 2.529805 seconds (1011922180 cycles)
+[GPU SpTns MTTKRP]: 0.814102464 s
+**************** Mode 2 ****************
+niters: 5
+input file: nell-2-parti.tns
+output file: nell-2.out
+mode: 2
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+2	1	0	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=12092x9184x28818 NNZ=76879419 DENSITY=2.402239e-05
+Average slice length (c): 6357.87 , 8371.02 , 2667.76
+COO-STORAGE=1.43GB
+
+[CUDA SpTns MTTKRP H2D]: 0.969449587 s
+[Bandwidth H2D]: 1.627719 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.222467225 s
+[GFLOPS]: 44.23 GFlops, [Bandwidth]: 7.03 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.005583309 s
+[Bandwidth D2H]: 2.642667 GBytes/sec
+
+Time taken: 1.213549 seconds (2427098368 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.636631524 s
+[Bandwidth H2D]: 2.478657 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.186090803 s
+[GFLOPS]: 52.88 GFlops, [Bandwidth]: 8.40 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.007235319 s
+[Bandwidth D2H]: 2.039278 GBytes/sec
+
+Time taken: 0.844983 seconds (1689965312 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.608291715 s
+[Bandwidth H2D]: 2.594136 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.185216542 s
+[GFLOPS]: 53.13 GFlops, [Bandwidth]: 8.44 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.003362692 s
+[Bandwidth D2H]: 4.387801 GBytes/sec
+
+Time taken: 0.811824 seconds (1623648384 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.334371069 s
+[Bandwidth H2D]: 4.719282 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.185622771 s
+[GFLOPS]: 53.01 GFlops, [Bandwidth]: 8.42 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.003662193 s
+[Bandwidth D2H]: 4.028959 GBytes/sec
+
+Time taken: 0.538577 seconds (1077154944 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.318373680 s
+[Bandwidth H2D]: 4.956413 GBytes/sec
+all_nblocks: 4804964, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.185898287 s
+[GFLOPS]: 52.94 GFlops, [Bandwidth]: 8.41 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.004270954 s
+[Bandwidth D2H]: 3.454690 GBytes/sec
+
+Time taken: 0.525243 seconds (1050486464 cycles)
+Average time taken: 3.934177 seconds (1573670697 cycles)
+[GPU SpTns MTTKRP]: 1.175035248 s
+==========================================================
+netflix
+==========================================================
+**************** Mode 0 ****************
+niters: 5
+input file: netflix-parti.tns
+output file: netflix.out
+mode: 0
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+0	2	1	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=480189x17770x2182 NNZ=100480507 DENSITY=5.396690e-06
+Average slice length (c): 209.25 , 5654.50 , 46049.73
+COO-STORAGE=1.87GB
+
+[CUDA SpTns MTTKRP H2D]: 1.373815096 s
+[Bandwidth H2D]: 1.828149 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.266584102 s
+[GFLOPS]: 48.25 GFlops, [Bandwidth]: 8.50 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.103975628 s
+[Bandwidth D2H]: 2.364562 GBytes/sec
+
+Time taken: 1.762538 seconds (3525076480 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.803378832 s
+[Bandwidth H2D]: 3.126220 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.221606241 s
+[GFLOPS]: 58.04 GFlops, [Bandwidth]: 10.22 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.103792437 s
+[Bandwidth D2H]: 2.368735 GBytes/sec
+
+Time taken: 1.146927 seconds (2293853696 cycles)
+[CUDA SpTns MTTKRP H2D]: 1.121842089 s
+[Bandwidth H2D]: 2.238764 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.222437550 s
+[GFLOPS]: 57.82 GFlops, [Bandwidth]: 10.19 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.146966590 s
+[Bandwidth D2H]: 1.672875 GBytes/sec
+
+Time taken: 1.510513 seconds (3021025536 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.989425880 s
+[Bandwidth H2D]: 2.538380 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.222300744 s
+[GFLOPS]: 57.86 GFlops, [Bandwidth]: 10.19 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.139336232 s
+[Bandwidth D2H]: 1.764486 GBytes/sec
+
+Time taken: 1.370164 seconds (2740327168 cycles)
+[CUDA SpTns MTTKRP H2D]: 1.079443619 s
+[Bandwidth H2D]: 2.326698 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.221796740 s
+[GFLOPS]: 57.99 GFlops, [Bandwidth]: 10.22 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.136421592 s
+[Bandwidth D2H]: 1.802184 GBytes/sec
+
+Time taken: 1.455540 seconds (2911079680 cycles)
+Average time taken: 7.245681 seconds (2898272466 cycles)
+[GPU SpTns MTTKRP]: 1.767127780 s
+**************** Mode 1 ****************
+niters: 5
+input file: netflix-parti.tns
+output file: netflix.out
+mode: 1
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+1	2	0	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=480189x17770x2182 NNZ=100480507 DENSITY=5.396690e-06
+Average slice length (c): 209.25 , 5654.50 , 46049.73
+COO-STORAGE=1.87GB
+
+[CUDA SpTns MTTKRP H2D]: 1.087798554 s
+[Bandwidth H2D]: 2.091178 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.293145805 s
+[GFLOPS]: 43.87 GFlops, [Bandwidth]: 7.73 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000849872 s
+[Bandwidth D2H]: 10.705433 GBytes/sec
+
+Time taken: 1.406242 seconds (2812483584 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.517959095 s
+[Bandwidth H2D]: 4.391815 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.233882606 s
+[GFLOPS]: 54.99 GFlops, [Bandwidth]: 9.69 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000911988 s
+[Bandwidth D2H]: 9.976280 GBytes/sec
+
+Time taken: 0.768072 seconds (1536144896 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.429501186 s
+[Bandwidth H2D]: 5.296331 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.236298062 s
+[GFLOPS]: 54.43 GFlops, [Bandwidth]: 9.59 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000941124 s
+[Bandwidth D2H]: 9.667427 GBytes/sec
+
+Time taken: 0.682850 seconds (1365700480 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.494124536 s
+[Bandwidth H2D]: 4.603658 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.237002865 s
+[GFLOPS]: 54.27 GFlops, [Bandwidth]: 9.56 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001055039 s
+[Bandwidth D2H]: 8.623613 GBytes/sec
+
+Time taken: 0.748060 seconds (1496119808 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.557272263 s
+[Bandwidth H2D]: 4.081991 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.235278064 s
+[GFLOPS]: 54.67 GFlops, [Bandwidth]: 9.63 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000950123 s
+[Bandwidth D2H]: 9.575863 GBytes/sec
+
+Time taken: 0.811901 seconds (1623802240 cycles)
+Average time taken: 4.417125 seconds (1766850185 cycles)
+[GPU SpTns MTTKRP]: 1.173569344 s
+**************** Mode 2 ****************
+niters: 5
+input file: netflix-parti.tns
+output file: netflix.out
+mode: 2
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+2	1	0	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=480189x17770x2182 NNZ=100480507 DENSITY=5.396690e-06
+Average slice length (c): 209.25 , 5654.50 , 46049.73
+COO-STORAGE=1.87GB
+
+[CUDA SpTns MTTKRP H2D]: 1.294190235 s
+[Bandwidth H2D]: 1.751520 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.294698303 s
+[GFLOPS]: 43.64 GFlops, [Bandwidth]: 7.69 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000382712 s
+[Bandwidth D2H]: 2.919145 GBytes/sec
+
+Time taken: 1.606380 seconds (3212759296 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.599568535 s
+[Bandwidth H2D]: 3.780718 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.240698944 s
+[GFLOPS]: 53.43 GFlops, [Bandwidth]: 9.41 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000485024 s
+[Bandwidth D2H]: 2.303375 GBytes/sec
+
+Time taken: 0.857689 seconds (1715378304 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.828315503 s
+[Bandwidth H2D]: 2.736638 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.239567058 s
+[GFLOPS]: 53.69 GFlops, [Bandwidth]: 9.46 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001857487 s
+[Bandwidth D2H]: 0.601453 GBytes/sec
+
+Time taken: 1.086724 seconds (2173448192 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.846345789 s
+[Bandwidth H2D]: 2.678337 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.239178495 s
+[GFLOPS]: 53.77 GFlops, [Bandwidth]: 9.47 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000554625 s
+[Bandwidth D2H]: 2.014320 GBytes/sec
+
+Time taken: 1.103705 seconds (2207409664 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.787628018 s
+[Bandwidth H2D]: 2.878008 GBytes/sec
+all_nblocks: 6280032, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.240034783 s
+[GFLOPS]: 53.58 GFlops, [Bandwidth]: 9.44 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000445232 s
+[Bandwidth D2H]: 2.509236 GBytes/sec
+
+Time taken: 1.044478 seconds (2088955904 cycles)
+Average time taken: 5.698976 seconds (2279590225 cycles)
+[GPU SpTns MTTKRP]: 1.470367443 s
+==========================================================
+poisson3D
+==========================================================
+**************** Mode 0 ****************
+niters: 5
+input file: poisson3D-parti.tns
+output file: poisson3D.out
+mode: 0
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+0	2	1	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=3000x3000x3000 NNZ=99589068 DENSITY=3.688484e-03
+Average slice length (c): 33196.36 , 33196.36 , 33196.36
+COO-STORAGE=1.85GB
+
+[CUDA SpTns MTTKRP H2D]: 0.517532795 s
+[Bandwidth H2D]: 3.860481 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.251425739 s
+[GFLOPS]: 50.70 GFlops, [Bandwidth]: 7.94 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000284724 s
+[Bandwidth D2H]: 5.394726 GBytes/sec
+
+Time taken: 0.784507 seconds (1569014144 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.375098053 s
+[Bandwidth H2D]: 5.326408 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.220255492 s
+[GFLOPS]: 57.88 GFlops, [Bandwidth]: 9.06 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000266526 s
+[Bandwidth D2H]: 5.763070 GBytes/sec
+
+Time taken: 0.610822 seconds (1221644544 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.340529807 s
+[Bandwidth H2D]: 5.867109 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.218748268 s
+[GFLOPS]: 58.27 GFlops, [Bandwidth]: 9.13 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000307159 s
+[Bandwidth D2H]: 5.000693 GBytes/sec
+
+Time taken: 0.574654 seconds (1149308544 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.333746367 s
+[Bandwidth H2D]: 5.986358 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.220301503 s
+[GFLOPS]: 57.86 GFlops, [Bandwidth]: 9.06 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000287170 s
+[Bandwidth D2H]: 5.348776 GBytes/sec
+
+Time taken: 0.571273 seconds (1142545280 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.325955256 s
+[Bandwidth H2D]: 6.129447 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.220782682 s
+[GFLOPS]: 57.74 GFlops, [Bandwidth]: 9.04 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000283487 s
+[Bandwidth D2H]: 5.418266 GBytes/sec
+
+Time taken: 0.564019 seconds (1128037632 cycles)
+Average time taken: 3.105275 seconds (1242110037 cycles)
+[GPU SpTns MTTKRP]: 0.884376899 s
+**************** Mode 1 ****************
+niters: 5
+input file: poisson3D-parti.tns
+output file: poisson3D.out
+mode: 1
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+1	2	0	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=3000x3000x3000 NNZ=99589068 DENSITY=3.688484e-03
+Average slice length (c): 33196.36 , 33196.36 , 33196.36
+COO-STORAGE=1.85GB
+
+[CUDA SpTns MTTKRP H2D]: 0.447766045 s
+[Bandwidth H2D]: 4.461985 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.252650113 s
+[GFLOPS]: 50.45 GFlops, [Bandwidth]: 7.90 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000382644 s
+[Bandwidth D2H]: 4.014196 GBytes/sec
+
+Time taken: 0.716073 seconds (1432146304 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.439736768 s
+[Bandwidth H2D]: 4.543458 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.219646270 s
+[GFLOPS]: 58.04 GFlops, [Bandwidth]: 9.09 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000753975 s
+[Bandwidth D2H]: 2.037213 GBytes/sec
+
+Time taken: 0.675193 seconds (1350386304 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.338155102 s
+[Bandwidth H2D]: 5.908311 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.221848276 s
+[GFLOPS]: 57.46 GFlops, [Bandwidth]: 9.00 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000394418 s
+[Bandwidth D2H]: 3.894366 GBytes/sec
+
+Time taken: 0.577000 seconds (1154000768 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.341356337 s
+[Bandwidth H2D]: 5.852903 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.220729839 s
+[GFLOPS]: 57.75 GFlops, [Bandwidth]: 9.04 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000373836 s
+[Bandwidth D2H]: 4.108775 GBytes/sec
+
+Time taken: 0.577484 seconds (1154968832 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.336412442 s
+[Bandwidth H2D]: 5.938916 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.221618216 s
+[GFLOPS]: 57.52 GFlops, [Bandwidth]: 9.01 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000408211 s
+[Bandwidth D2H]: 3.762780 GBytes/sec
+
+Time taken: 0.575228 seconds (1150455936 cycles)
+Average time taken: 3.120979 seconds (1248391628 cycles)
+[GPU SpTns MTTKRP]: 0.939228341 s
+**************** Mode 2 ****************
+niters: 5
+input file: poisson3D-parti.tns
+output file: poisson3D.out
+mode: 2
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+2	0	1	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=3000x3000x3000 NNZ=99589068 DENSITY=3.688484e-03
+Average slice length (c): 33196.36 , 33196.36 , 33196.36
+COO-STORAGE=1.85GB
+
+[CUDA SpTns MTTKRP H2D]: 1.120343398 s
+[Bandwidth H2D]: 1.783315 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.276270307 s
+[GFLOPS]: 46.14 GFlops, [Bandwidth]: 7.23 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000424376 s
+[Bandwidth D2H]: 3.619451 GBytes/sec
+
+Time taken: 1.414197 seconds (2828393216 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.435091915 s
+[Bandwidth H2D]: 4.591962 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.227400894 s
+[GFLOPS]: 56.06 GFlops, [Bandwidth]: 8.78 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000378282 s
+[Bandwidth D2H]: 4.060484 GBytes/sec
+
+Time taken: 0.678382 seconds (1356763264 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.378009614 s
+[Bandwidth H2D]: 5.285382 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.227166697 s
+[GFLOPS]: 56.11 GFlops, [Bandwidth]: 8.79 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000370018 s
+[Bandwidth D2H]: 4.151171 GBytes/sec
+
+Time taken: 0.620602 seconds (1241204608 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.357559698 s
+[Bandwidth H2D]: 5.587669 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.226946478 s
+[GFLOPS]: 56.17 GFlops, [Bandwidth]: 8.80 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000369200 s
+[Bandwidth D2H]: 4.160368 GBytes/sec
+
+Time taken: 0.599948 seconds (1199896064 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.319039640 s
+[Bandwidth H2D]: 6.262311 GBytes/sec
+all_nblocks: 6224317, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.227776691 s
+[GFLOPS]: 55.96 GFlops, [Bandwidth]: 8.76 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000347364 s
+[Bandwidth D2H]: 4.421897 GBytes/sec
+
+Time taken: 0.562216 seconds (1124432256 cycles)
+Average time taken: 3.875345 seconds (1550137877 cycles)
+[GPU SpTns MTTKRP]: 1.118720126 s
+==========================================================
+ml20m
+==========================================================
+**************** Mode 0 ****************
+niters: 5
+input file: ml20m-parti.tns
+output file: ml20m.out
+mode: 0
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+0	2	1	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=138493x26744x234 NNZ=20000263 DENSITY=2.307627e-05
+Average slice length (c): 144.41 , 747.84 , 85471.21
+COO-STORAGE=381.47MB
+
+[CUDA SpTns MTTKRP H2D]: 0.330975029 s
+[Bandwidth H2D]: 1.678782 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.072061703 s
+[GFLOPS]: 35.53 GFlops, [Bandwidth]: 6.73 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.005676311 s
+[Bandwidth D2H]: 12.491991 GBytes/sec
+
+Time taken: 0.419226 seconds (838452480 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.109125339 s
+[Bandwidth H2D]: 5.091712 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.065182930 s
+[GFLOPS]: 39.27 GFlops, [Bandwidth]: 7.44 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.006251348 s
+[Bandwidth D2H]: 11.342901 GBytes/sec
+
+Time taken: 0.191086 seconds (382171808 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.102409188 s
+[Bandwidth H2D]: 5.425635 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.059015737 s
+[GFLOPS]: 43.38 GFlops, [Bandwidth]: 8.21 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.006168089 s
+[Bandwidth D2H]: 11.496012 GBytes/sec
+
+Time taken: 0.178090 seconds (356179648 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.102094143 s
+[Bandwidth H2D]: 5.442377 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.054165977 s
+[GFLOPS]: 47.26 GFlops, [Bandwidth]: 8.95 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.006175065 s
+[Bandwidth D2H]: 11.483025 GBytes/sec
+
+Time taken: 0.172940 seconds (345880064 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.105305896 s
+[Bandwidth H2D]: 5.276389 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.054120754 s
+[GFLOPS]: 47.30 GFlops, [Bandwidth]: 8.96 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.006186851 s
+[Bandwidth D2H]: 11.461149 GBytes/sec
+
+Time taken: 0.176140 seconds (352279008 cycles)
+Average time taken: 1.137481 seconds (454992598 cycles)
+[GPU SpTns MTTKRP]: 0.546730442 s
+**************** Mode 1 ****************
+niters: 5
+input file: ml20m-parti.tns
+output file: ml20m.out
+mode: 1
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+1	2	0	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=138493x26744x234 NNZ=20000263 DENSITY=2.307627e-05
+Average slice length (c): 144.41 , 747.84 , 85471.21
+COO-STORAGE=381.47MB
+
+[CUDA SpTns MTTKRP H2D]: 0.199028389 s
+[Bandwidth H2D]: 2.504263 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.086770375 s
+[GFLOPS]: 29.50 GFlops, [Bandwidth]: 5.59 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001321788 s
+[Bandwidth D2H]: 10.359404 GBytes/sec
+
+Time taken: 0.297561 seconds (595122624 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.082503187 s
+[Bandwidth H2D]: 6.041213 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.078205619 s
+[GFLOPS]: 32.73 GFlops, [Bandwidth]: 6.20 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001240814 s
+[Bandwidth D2H]: 11.035446 GBytes/sec
+
+Time taken: 0.172282 seconds (344564576 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.076117701 s
+[Bandwidth H2D]: 6.548009 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.070873733 s
+[GFLOPS]: 36.12 GFlops, [Bandwidth]: 6.84 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001427737 s
+[Bandwidth D2H]: 9.590657 GBytes/sec
+
+Time taken: 0.159322 seconds (318643776 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.078474230 s
+[Bandwidth H2D]: 6.351376 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.065863823 s
+[GFLOPS]: 38.87 GFlops, [Bandwidth]: 7.36 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001344793 s
+[Bandwidth D2H]: 10.182189 GBytes/sec
+
+Time taken: 0.156074 seconds (312148800 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.079763854 s
+[Bandwidth H2D]: 6.248687 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.065544263 s
+[GFLOPS]: 39.06 GFlops, [Bandwidth]: 7.40 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.001325964 s
+[Bandwidth D2H]: 10.326778 GBytes/sec
+
+Time taken: 0.157002 seconds (314004832 cycles)
+Average time taken: 0.942242 seconds (376896929 cycles)
+[GPU SpTns MTTKRP]: 0.510828365 s
+**************** Mode 2 ****************
+niters: 5
+input file: ml20m-parti.tns
+output file: ml20m.out
+mode: 2
+cuda_dev_id: 2
+sortcase: 1
+Tenson nmodes read as: 3
+mode_order:
+sptIndex array length: 3
+2	1	0	
+COO Sparse Tensor information (use sptIndex, sptValue))---------
+DIMS=138493x26744x234 NNZ=20000263 DENSITY=2.307627e-05
+Average slice length (c): 144.41 , 747.84 , 85471.21
+COO-STORAGE=381.47MB
+
+[CUDA SpTns MTTKRP H2D]: 0.270608201 s
+[Bandwidth H2D]: 1.791691 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.078115029 s
+[GFLOPS]: 32.77 GFlops, [Bandwidth]: 6.21 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000121479 s
+[Bandwidth D2H]: 0.986310 GBytes/sec
+
+Time taken: 0.359602 seconds (719203520 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.091303442 s
+[Bandwidth H2D]: 5.310273 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.071717145 s
+[GFLOPS]: 35.70 GFlops, [Bandwidth]: 6.76 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000085071 s
+[Bandwidth D2H]: 1.408424 GBytes/sec
+
+Time taken: 0.173779 seconds (347558368 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.077219552 s
+[Bandwidth H2D]: 6.278802 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.065241859 s
+[GFLOPS]: 39.24 GFlops, [Bandwidth]: 7.43 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000066717 s
+[Bandwidth D2H]: 1.795884 GBytes/sec
+
+Time taken: 0.153208 seconds (306416224 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.075955789 s
+[Bandwidth H2D]: 6.383269 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.060941106 s
+[GFLOPS]: 42.01 GFlops, [Bandwidth]: 7.95 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000080590 s
+[Bandwidth D2H]: 1.486735 GBytes/sec
+
+Time taken: 0.147590 seconds (295179520 cycles)
+[CUDA SpTns MTTKRP H2D]: 0.070893414 s
+[Bandwidth H2D]: 6.839087 GBytes/sec
+all_nblocks: 1250017, nthreadsx: 16, nthreadsy: 16
+Execute spt_MTTKRPKernelRankSplitNnz3DOneKernel (32768, (16, 16))
+[CUDA SpTns MTTKRP]: 0.059660275 s
+[GFLOPS]: 42.91 GFlops, [Bandwidth]: 8.12 GB/s
+[CUDA SpTns MTTKRP D2H]: 0.000063751 s
+[Bandwidth D2H]: 1.879437 GBytes/sec
+
+Time taken: 0.140941 seconds (281881760 cycles)
+Average time taken: 0.975120 seconds (390047878 cycles)
+[GPU SpTns MTTKRP]: 0.539114778 s

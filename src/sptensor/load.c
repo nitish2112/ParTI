@@ -32,6 +32,7 @@ int sptLoadSparseTensor(sptSparseTensor *tsr, sptIndex start_index, FILE *fp) {
     int iores, retval;
     sptIndex mode;
     iores = fscanf(fp, "%u", &tsr->nmodes);
+    printf("Tenson nmodes read as: %d\n", tsr->nmodes);
     spt_CheckOSError(iores < 0, "SpTns Load");
     /* Only allocate space for sortorder, initialized to 0s. */
     tsr->sortorder = malloc(tsr->nmodes * sizeof tsr->sortorder[0]);
