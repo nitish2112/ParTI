@@ -55,7 +55,8 @@ int main(int argc, char const* argv[]) {
         return 1;
     }
 
-    // session.print_devices();
+    session.print_devices();
+    printf("Using device: %d\n", device);
     Device* dev = session.devices[device];
     if(dynamic_cast<CudaDevice*>(dev) != nullptr) {
         std::printf("Using CUDA for calculation.\n");
