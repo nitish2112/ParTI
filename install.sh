@@ -2,7 +2,7 @@
 
 set -x
 
-if [ ! -d $(PWD)/lib/backward-cpp ]; then git clone https://github.com/bombela/backward-cpp.git lib/backward-cpp fi
+if [ ! -d $(PWD)/lib/backward-cpp ]; then git clone https://github.com/bombela/backward-cpp.git lib/backward-cpp; fi
 rm -rf install OpenBLAS build &&
 source setup.sh &&
 mkdir install &&

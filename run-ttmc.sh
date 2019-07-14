@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gdb -args ./build/tests/test_tucker -o $1.out  --dev $3 $1-parti.tns #-r 64
+./build/tests/test_tucker -o $1.out  --dev $2 $1-parti.tns 64 64 64 0 1 2 #-r 64
