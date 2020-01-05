@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source setup.sh &&
+rm -rf OpenBLAS install build &&
 mkdir install &&
 git clone https://github.com/xianyi/OpenBLAS.git &&
 cd OpenBLAS &&

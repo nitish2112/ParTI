@@ -183,7 +183,8 @@ int sptCudaMTTKRPOneKernel(
     sptMatrix ** const mats,     // mats[nmodes] as temporary space.
     sptIndex * const mats_order,    // Correspond to the mode order of X.
     sptIndex const mode,
-    sptIndex const impl_num);
+    sptIndex const impl_num,
+    double* runtime);
 
 
 

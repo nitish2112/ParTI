@@ -215,11 +215,14 @@ int main(int argc, char ** argv) {
     }
 
     /* For warm-up caches, timing not included */
-    /*
+    struct timespec start, end;
+    double runtime = 0.0f;
+    double avgtime = 0.0f;
+
     if(cuda_dev_id >= 0) {
         sptCudaSetDevice(cuda_dev_id);
         // sptAssert(sptCudaMTTKRP(&X, U, mats_order, mode, impl_num) == 0);
-        sptAssert(sptCudaMTTKRPOneKernel(&X, U, mats_order, mode, impl_num) == 0);
+        sptAssert(sptCudaMTTKRPOneKernel(&X, U, mats_order, mode, impl_num, &runtime) == 0);
 
         #if 0
         switch(ncudas) {
@@ -237,10 +240,6 @@ int main(int argc, char ** argv) {
         }
        #endif
     }
-    */
-    struct timespec start, end;
-    float diff = 0.0f;
-    double avgtime = 0.0f;
 
     sptTimer timer;
     sptNewTimer(&timer, 0);
@@ -250,13 +249,9 @@ int main(int argc, char ** argv) {
         if(cuda_dev_id >= 0) {
             sptCudaSetDevice(cuda_dev_id);
             // sptAssert(sptCudaMTTKRP(&X, U, mats_order, mode, impl_num) == 0);
-            clock_gettime(CLOCK_MONOTONIC, &start); /* mark start time */
-            sptAssert(sptCudaMTTKRPOneKernel(&X, U, mats_order, mode, impl_num) == 0);
-            clock_gettime(CLOCK_MONOTONIC, &end); /* mark the end time */
-            diff = ( BILLION * (end.tv_sec - start.tv_sec) + end.tv_nsec - start.tv_nsec );
-            diff = diff / ((double)BILLION);
-            avgtime += (double)diff;
-            printf("Time taken: %f seconds (%ld cycles)\n", diff,  (long int)((diff*BILLION)/0.5)); // number if cycles at 2GHz clock
+            sptAssert(sptCudaMTTKRPOneKernel(&X, U, mats_order, mode, impl_num, &runtime) == 0);
+            avgtime += (double)runtime;
+            printf("Time taken: %f seconds (%ld cycles)\n", runtime,  (long int)((runtime*BILLION)/0.5)); // number if cycles at 2GHz clock
         }
     }
     sptStopTimer(timer);

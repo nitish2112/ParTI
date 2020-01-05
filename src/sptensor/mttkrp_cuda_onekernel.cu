@@ -20,8 +20,7 @@
 #include "sptensor.h"
 #include "../cudawrap.h"
 #include "mttkrp_cuda_kernels.h"
-
-
+#include <cuda_profiler_api.h>
 
 /**
  * CUDA parallelized Matriced sparse tensor times a sequence of dense matrix Khatri-Rao products (MTTKRP) on a specified mode
@@ -43,7 +42,8 @@ int sptCudaMTTKRPOneKernel(
     sptMatrix ** const mats,     // mats[nmodes] as temporary space.
     sptIndex * const mats_order,    // Correspond to the mode order of X.
     sptIndex const mode,
-    sptIndex const impl_num) 
+    sptIndex const impl_num,
+    double* runtime) 
 {
     sptIndex const nmodes = X->nmodes;
     sptNnzIndex const nnz = X->nnz;
@@ -240,6 +240,7 @@ int sptCudaMTTKRPOneKernel(
 
 
     sptStartTimer(timer);
+    cudaProfilerStart();
 
     switch(nmodes) {
     case 3:
@@ -379,7 +380,9 @@ int sptCudaMTTKRPOneKernel(
 
 
     sptStopTimer(timer);
+    cudaProfilerStop();
     time_exe = sptElapsedTime(timer);
+    *runtime = time_exe;
     gflops_exe = (double)dev_flops / time_exe / 1e9;
     gbytes_exe = (double)dev_bytes / time_exe / 1e9;
     sptPrintElapsedTime(timer, "CUDA SpTns MTTKRP");
