@@ -11,9 +11,5 @@ do
   echo "==========================================================" | tee -a result.log
   echo $tensor | tee -a result.log
   echo "==========================================================" | tee -a result.log
-  for mode in `seq 0 2`
-  do
-    echo "**************** Mode $mode ****************" | tee -a result.log
-    ./run-ttmc.sh $tensor $mode 2>&1 | tee -a result.log
-  done
+  ./run-ttmc.sh $tensor $1 2>&1 | tee -a result.log
 done

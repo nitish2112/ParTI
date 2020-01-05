@@ -113,7 +113,7 @@ SparseTensor tucker_decomposition(
     double          tol,
     unsigned        maxiters
 ) {
-    maxiters = 2; // jli added for debug
+    maxiters = 10; // jli added for debug
     ptiCheckError(X.dense_order.size() != 0, ERR_SHAPE_MISMATCH, "X should be fully sparse");
 
     size_t N = X.nmodes;
